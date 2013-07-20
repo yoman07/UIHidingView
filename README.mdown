@@ -6,12 +6,10 @@ UIHidingView is an iOS class that displays UIView element on top UITableView whi
 
 
 
-[![](https://photos-6.dropbox.com/t/0/AAB7QNEfPhmD63TfS-XZ-MsgLe_XLJ_8tmiVighK3d_9Xg/12/16381969/png/32x32/3/1374328800/0/2/iOS%20Simulator%20Screen%20shot%2020%20lip%202013%2014.08.08.png/7bA2GDKMZ63SpykUC2XsglveoTGoJQ23djrSq1erCc8?size=1280x960)](https://photos-6.dropbox.com/t/0/AAB7QNEfPhmD63TfS-XZ-MsgLe_XLJ_8tmiVighK3d_9Xg/12/16381969/png/32x32/3/1374328800/0/2/iOS%20Simulator%20Screen%20shot%2020%20lip%202013%2014.08.08.png/7bA2GDKMZ63SpykUC2XsglveoTGoJQ23djrSq1erCc8?size=1280x960)
-[![](http://www.dropbox.com/s/xt32y86n7kjy2a9/iOS%20Simulator%20Screen%20shot%2020%20lip%202013%2014.07.02.png)](http://www.dropbox.com/s/xt32y86n7kjy2a9/iOS%20Simulator%20Screen%20shot%2020%20lip%202013%2014.07.02.png)
-[![](http://www.dropbox.com/s/eouc4o5h35oa4xc/iOS%20Simulator%20Screen%20shot%2020%20lip%202013%2014.08.07.png)](http://www.dropbox.com/s/eouc4o5h35oa4xc/iOS%20Simulator%20Screen%20shot%2020%20lip%202013%2014.08.07.png)
-[![](http://www.dropbox.com/s/m794ycye9fjsskf/iOS%20Simulator%20Screen%20shot%2020%20lip%202013%2014.08.08.png)](http://www.dropbox.com/s/m794ycye9fjsskf/iOS%20Simulator%20Screen%20shot%2020%20lip%202013%2014.08.08.png)
-
-
+[Imgur](http://i.imgur.com/xDeC1Sy.png)
+[Imgur](http://i.imgur.com/1gRfGFO)
+[Imgur](http://i.imgur.com/j0pHSEd)
+[Imgur](http://i.imgur.com/iEdlrIZ)
 ------------------------------------
 Adding UIHidingView to your project
 ====================================
