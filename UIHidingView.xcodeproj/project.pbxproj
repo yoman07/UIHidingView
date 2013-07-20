@@ -19,6 +19,7 @@
 		397E48DA179AA73900C326E2 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397E48D8179AA73900C326E2 /* MainStoryboard_iPhone.storyboard */; };
 		397E48DD179AA73900C326E2 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397E48DB179AA73900C326E2 /* MainStoryboard_iPad.storyboard */; };
 		397E48E0179AA73900C326E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 397E48DF179AA73900C326E2 /* ViewController.m */; };
+		397E48E9179AAA3300C326E2 /* UIView+HidingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 397E48E8179AAA3300C326E2 /* UIView+HidingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		397E48DC179AA73900C326E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		397E48DE179AA73900C326E2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		397E48DF179AA73900C326E2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		397E48E7179AAA3300C326E2 /* UIView+HidingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+HidingView.h"; path = "Class/UIView+HidingView.h"; sourceTree = "<group>"; };
+		397E48E8179AAA3300C326E2 /* UIView+HidingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+HidingView.m"; path = "Class/UIView+HidingView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +88,7 @@
 		397E48C6179AA73900C326E2 /* UIHidingView */ = {
 			isa = PBXGroup;
 			children = (
-				397E48CF179AA73900C326E2 /* AppDelegate.h */,
-				397E48D0179AA73900C326E2 /* AppDelegate.m */,
+				397E48E6179AA7C200C326E2 /* Class */,
 				397E48D8179AA73900C326E2 /* MainStoryboard_iPhone.storyboard */,
 				397E48DB179AA73900C326E2 /* MainStoryboard_iPad.storyboard */,
 				397E48DE179AA73900C326E2 /* ViewController.h */,
@@ -99,6 +101,8 @@
 		397E48C7179AA73900C326E2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				397E48CF179AA73900C326E2 /* AppDelegate.h */,
+				397E48D0179AA73900C326E2 /* AppDelegate.m */,
 				397E48C8179AA73900C326E2 /* UIHidingView-Info.plist */,
 				397E48C9179AA73900C326E2 /* InfoPlist.strings */,
 				397E48CC179AA73900C326E2 /* main.m */,
@@ -108,6 +112,15 @@
 				397E48D6179AA73900C326E2 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		397E48E6179AA7C200C326E2 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				397E48E7179AAA3300C326E2 /* UIView+HidingView.h */,
+				397E48E8179AAA3300C326E2 /* UIView+HidingView.m */,
+			);
+			name = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +193,7 @@
 				397E48CD179AA73900C326E2 /* main.m in Sources */,
 				397E48D1179AA73900C326E2 /* AppDelegate.m in Sources */,
 				397E48E0179AA73900C326E2 /* ViewController.m in Sources */,
+				397E48E9179AAA3300C326E2 /* UIView+HidingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +291,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIHidingView/UIHidingView-Prefix.pch";
 				INFOPLIST_FILE = "UIHidingView/UIHidingView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -288,6 +303,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIHidingView/UIHidingView-Prefix.pch";
 				INFOPLIST_FILE = "UIHidingView/UIHidingView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
