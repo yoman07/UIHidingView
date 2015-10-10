@@ -30,6 +30,9 @@ typedef enum ScrollDirection {
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if (scrollView.contentSize.height <= scrollView.frame.size.height+141) //141 is the Cell Height
+        return;
+    
     __block BOOL wasAnimated = NO;
     ScrollDirection scrollDirection = ScrollDirectionDown;
     
@@ -45,14 +48,14 @@ typedef enum ScrollDirection {
     self.lastContentOffset = currentOffset;
     
     if(scrollView.contentOffset.y <= 0 && scrollView.frame.origin.y != self.frame.size.height ) {
-
-                             scrollView.frame = CGRectMake(scrollView.bounds.origin.x,
+        
+        scrollView.frame = CGRectMake(scrollView.bounds.origin.x,
                                                            self.frame.size.height,
                                                            scrollView.bounds.size.width,
                                                            scrollView.bounds.size.height
                                                            - self.frame.size.height);
                              
-                             
+        
                              self.frame = CGRectMake(self.bounds.origin.x,
                                                                          self.bounds.origin.y,
                                                                          self.bounds.size.width,
@@ -60,16 +63,15 @@ typedef enum ScrollDirection {
                              wasAnimated = YES;
         
     } else if(scrollView.contentOffset.y > 0 && scrollView.frame.origin.y != 0){
-
-                             scrollView.frame = CGRectMake(scrollView.bounds.origin.x,
+        
+                        scrollView.frame = CGRectMake(scrollView.bounds.origin.x,
                                                       0,
                                                       scrollView.bounds.size.width,
                                                       scrollView.bounds.size.height
                                                            +  self.frame.size.height); //minus because self.currentTableHideY is negative
 
     }
-    
-    if((abs(differenceFromLast)>1) && scrollView.isTracking && !wasAnimated ) {
+   if((abs(differenceFromLast)>1) && scrollView.isTracking && !wasAnimated ) {
         if(scrollDirection == ScrollDirectionDown) {
             [UIView animateWithDuration:ANIMATION_HIDE_BUTTONS_TIME
                              animations:^{
@@ -79,6 +81,7 @@ typedef enum ScrollDirection {
                                                                              self.bounds.size.height);
                              }];
         } else {
+            NSLog(@"else");
             [UIView animateWithDuration:ANIMATION_HIDE_BUTTONS_TIME
                              animations:^{
                                  self.frame = CGRectMake(self.bounds.origin.x,
